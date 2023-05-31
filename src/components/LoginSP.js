@@ -18,8 +18,8 @@ const LoginSP = () => {
                 marginTop={5}
                 borderRadius={5}>
                 <Typography variant="h5" padding={1} textAlign="center">Login as a Service provider</Typography>
-                <TextField fullWidth onChange={handleChange} name="email" margin="normal" placeholder="Email" type={"email"}  />
-                <TextField fullWidth onChange={handleChange} name="password" margin="normal" placeholder="Password" type={"password"}  />
+                <TextField required={true} fullWidth onChange={handleChange} name="email" margin="normal" placeholder="Email" type={"email"}  />
+                <TextField required={true} fullWidth onChange={handleChange} name="password" margin="normal" placeholder="Password" type={"password"}  />
                <span display="block">
                 <Button size="medium" 
                  color="primary" variant="contained"  type="submit"> Sign in </Button>

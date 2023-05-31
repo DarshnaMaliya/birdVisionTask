@@ -18,7 +18,7 @@ return(
                     marginTop={5}
                     borderRadius={5}>
                     <Typography variant="h5" padding={1} textAlign="center">Forgot password?</Typography>
-                    <TextField fullWidth onChange={handleChange} name="email" margin="normal" placeholder="Email" type={"email"}  />
+                    <TextField required={true} fullWidth onChange={handleChange} name="email" margin="normal" placeholder="Email" type={"email"}  />
                     <Button fullWidth size="medium" 
                      color="primary" variant="contained"  type="submit"> Send reset password Link</Button>
                      <span>

@@ -1,4 +1,4 @@
-import { Button, Box, Typography } from "@mui/material"
+import { Button, Box } from "@mui/material"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Link } from "react-router-dom";
 const Register = () => {

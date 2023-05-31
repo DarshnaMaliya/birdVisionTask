@@ -18,10 +18,10 @@ const RegisterSP = () => {
                     marginTop={5}
                     borderRadius={5}>
                     <Typography variant="h5" padding={3}>Register as a service provider</Typography>
-                    <TextField fullWidth onChange={handleChange} name="contact" margin="normal" placeholder="Contact person" type={"email"}  />
-                    <TextField fullWidth onChange={handleChange} name="email" margin="normal" placeholder="Email" type={"email"}  />
-                    <TextField fullWidth onChange={handleChange} name="password" margin="normal" placeholder="password" type={"password"}  />
-                    <TextField fullWidth onChange={handleChange} name="Confpassword" margin="normal" placeholder="Confirm Password" type={"password"} />
+                    <TextField required={true} fullWidth onChange={handleChange} name="contact" margin="normal" placeholder="Contact person" type={"email"}  />
+                    <TextField required={true} fullWidth onChange={handleChange} name="email" margin="normal" placeholder="Email" type={"email"}  />
+                    <TextField required={true} fullWidth onChange={handleChange} name="password" margin="normal" placeholder="password" type={"password"}  />
+                    <TextField required={true} fullWidth onChange={handleChange} name="Confpassword" margin="normal" placeholder="Confirm Password" type={"password"} />
                     <Button fullWidth color="primary" variant="contained" type="submit"> Register</Button>
                     <span>
                 <Button 
