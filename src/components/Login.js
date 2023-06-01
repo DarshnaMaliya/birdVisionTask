@@ -7,7 +7,7 @@ import { CustomerActions } from "../store";
 const Login = () => {
 
     //redux implementation
-    
+
     const dispatch = useDispatch();
     const isCustomer = useSelector((state) => state.isCustomer);
     console.log(isCustomer);
@@ -32,14 +32,14 @@ const Login = () => {
                  LinkComponent={Link} to="/loginCust" 
                 //    onClick={handleLogin}
                     variant="text"
-                    sx={{ margin: 1, color: "black" }}
+                    sx={{ margin: 1, color: "black",textTransform: 'capitalize' }}
                     endIcon={<ArrowForwardIcon />}><h3>Login as Customer</h3>
                 </Button>
 
 
                 <Button variant="text"
                     LinkComponent={Link} to="/loginSP"
-                    sx={{ margin: 1, borderRadius: 2, color: "black" }}
+                    sx={{ margin: 1, borderRadius: 2, color: "black",textTransform: 'capitalize' }}
                     endIcon={<ArrowForwardIcon />}><h3>Login as Service Provider</h3>
                 </Button>
             </Box>

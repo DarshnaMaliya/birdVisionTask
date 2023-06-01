@@ -14,12 +14,12 @@ const Register = () => {
         <Button 
         LinkComponent={Link} to="/registerCust" 
          variant="text" 
-        sx={{margin:1, borderRadius:2,color:"black"}} 
+        sx={{margin:1, borderRadius:2,color:"black",textTransform: 'capitalize'}} 
         endIcon={<ArrowForwardIcon/>}><h3>Register as Customer</h3></Button>
 
         <Button variant="text" 
         LinkComponent={Link} to="/registerSP" 
-        sx={{margin:1, borderRadius:2,color:"black"}} 
+        sx={{margin:1, borderRadius:2,color:"black",textTransform: 'capitalize'}} 
         endIcon={<ArrowForwardIcon/>}><h3>Register as Service Provider</h3>
         </Button>
         </Box>
