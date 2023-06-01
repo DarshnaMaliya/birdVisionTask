@@ -1,12 +1,20 @@
+//Login form for Customer
+
+
 import { Box , Typography, TextField, Button} from "@mui/material";
 import { useState } from "react";
 import {Link} from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { CustomerActions } from "../store";
 
 const LoginCust = () => {
+
+    //redux
     const dispatch = useDispatch();
     const isCustomer = useSelector((state) => state.isCustomer);
     console.log(isCustomer);
+
+    //state 
     const [inputs, setInputs] = useState(
         {
             email : "",
@@ -19,6 +27,7 @@ const LoginCust = () => {
     }
     const handleLogin = (e) => {
         //e.preventDefault();
+        
         
     }
     return (
@@ -42,13 +51,13 @@ const LoginCust = () => {
                     <Button
                     onClick={handleLogin}
                     size="medium" 
-                     color="primary" variant="contained"  type="submit"> Sign in </Button>
+                     color="primary" variant="contained"  type="submit" marginLeft="0"> Sign in </Button>
                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <Button 
                     LinkComponent={Link} to="/forgotpwd"
                     size="medium" 
-                     color="primary" variant="text"  type="submit" style={{justifyContent: "flex-end"}}> forget password</Button>
+                     color="primary" variant="text" type="submit" style={{justifyContent: "flex-end"}}> forget password</Button>
                      </span>
                      <span>
                 <Button 

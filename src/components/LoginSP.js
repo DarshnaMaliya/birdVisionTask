@@ -1,3 +1,5 @@
+//Login form for Service Provider
+
 import { Box , Typography, TextField, Button} from "@mui/material";
 import { Link } from "react-router-dom";
 const LoginSP = () => {
@@ -25,7 +27,9 @@ const LoginSP = () => {
                  color="primary" variant="contained"  type="submit"> Sign in </Button>
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <Button size="medium" 
+                <Button 
+                LinkComponent={Link} to="/forgotpwd"
+                size="medium" 
                  color="primary" variant="text"  type="submit" style={{justifyContent: "flex-end"}}> forget password</Button>
                  </span>
                  <span>

@@ -1,6 +1,9 @@
+//Top navigation bar
+
 import React, { useState }  from "react";
 import {AppBar, Button, Toolbar, Typography, Box, Tabs , Tab} from "@mui/material";
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
+import AccountBoxIcon from '@mui/icons-material/AccountBox';  //for login Button
+import GTranslateIcon from '@mui/icons-material/GTranslate';  //for language button
 import { Link } from "react-router-dom";
 //import { useDispatch, useSelector } from "react-redux";
 //import { loginActions } from "../store";
@@ -21,6 +24,7 @@ const Header = () => {
             <Box display={"flex"} marginLeft={"auto"}>
             <Button 
                 //variant="outlined" 
+                endIcon={<GTranslateIcon/>}
                 sx={{margin:1, borderRadius:2}}
                 color="primary">English</Button>
                

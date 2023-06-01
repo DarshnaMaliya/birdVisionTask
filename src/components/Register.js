@@ -6,24 +6,23 @@ const Register = () => {
         <form>
             <Box maxWidth={400}
                     display={"flex"} flexDirection={"column"} alignItems="center" justifyContent={"center"}
-                    boxShadow="10px 10px 20px #ccc"
+                    //boxShadow="10px 10px 20px #ccc"
                     //padding={3}
                     margin="auto"
-                    marginTop={5}
+                    marginTop={20}
                     borderRadius={5}>
         <Button 
         LinkComponent={Link} to="/registerCust" 
          variant="text" 
-        sx={{margin:1, borderRadius:2}} 
-        endIcon={<ArrowForwardIcon/>}>Register as Customer</Button>
+        sx={{margin:1, borderRadius:2,color:"black"}} 
+        endIcon={<ArrowForwardIcon/>}><h3>Register as Customer</h3></Button>
 
         <Button variant="text" 
         LinkComponent={Link} to="/registerSP" 
-        sx={{margin:1, borderRadius:2}} 
-        endIcon={<ArrowForwardIcon/>}>Register as Service Provider
-     
+        sx={{margin:1, borderRadius:2,color:"black"}} 
+        endIcon={<ArrowForwardIcon/>}><h3>Register as Service Provider</h3>
         </Button>
-                    </Box>
+        </Box>
        
         </form>
     )
